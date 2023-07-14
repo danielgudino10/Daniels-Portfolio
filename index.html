@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daniel Gudino</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/your/stylesheet.css">
+</head>
+
+<body>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+   <i class="fas fa-bars"></i>
+  </label>
+  <nav>
+    <label class="logo">Daniel Gudino</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="background-image">
+    <section id="about" class="about-section" style="padding-top: 500px;">
+     <h2>Hi. My Name is Daniel.<br>A Full Stack Developer</h2>
+        <p>I am 20 years old and I live in Southern California. I began my coding journey this year and I've had the opportunity to meet and work with a lot of great people. My goal is to be proficient in a variety of different coding languages so that I may build websites that are beyond my clients expectations. If you have any questions about my work or have a website that you want built you can contact me via email or phone</p>
+    </section>
+
+    </section>
+
+  <article id="work" class="alpha-1">
+    <h2>My Work</h2>
+    <a href="./images/anime pic (1).jpg">
+      <img src="images/anime pic (1).jpg" alt="anime character" class="frame">
+    </a>
+    <a href="./images/module 2 image.png">
+      <img src="./images/module 2 image.png" alt="marketing meeting" class="larger-image , frame">
+    </a>
+    <a href="./images/anime pic (2).jpg">
+      <img src="./images/anime pic (2).jpg" alt="anime character" class="frame">
+    </a>
+  </article>
+
+
+  <footer id="contact" class="alpha-2">
+    <h2>Get in touch</h2>
+
+    <p>Need help creating a website? Contact Me! <a href="mailto:dgudino459@gmail.com"></a></p>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </footer>
+  <script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+
+</html>
